@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/txtTitulo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="429dp"
+        android:layout_height="47dp"
         android:layout_margin="1dp"
         android:background="#FFEB3B"
-        android:text="Google ML Kit QR"
+        android:text="Google ML Kit "
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -51,10 +51,13 @@
         android:layout_width="280dp"
         android:layout_height="47dp"
         android:layout_marginTop="48dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
+        android:background="#FFEB3B"
+        android:backgroundTint="#FFEB3B"
         android:onClick="selectImageSource"
         android:text="Galeria - Camara"
+        android:textColor="#BF360C"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FFEB3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,16 +65,20 @@
 
     <Button
         android:id="@+id/btscanner"
-        android:layout_width="311dp"
-        android:layout_height="49dp"
+        android:layout_width="274dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:background="#FFFFFF"
+        android:background="#673AB7"
         android:backgroundTint="#FFFFFF"
         android:onClick="onScanQRButtonClick"
+        android:outlineSpotShadowColor="#FFEB3B"
         android:text="Escanear "
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FFEB3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bttcamara" />
+        app:layout_constraintTop_toBottomOf="@+id/bttcamara"
+        app:rippleColor="#FFEB3B" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
